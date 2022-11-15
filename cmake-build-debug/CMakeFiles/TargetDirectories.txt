@@ -1,0 +1,3 @@
+D:/mySrouceCode/DipLevel1/cmake-build-debug/CMakeFiles/DipLevel1.dir
+D:/mySrouceCode/DipLevel1/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/mySrouceCode/DipLevel1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
