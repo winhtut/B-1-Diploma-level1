@@ -49,8 +49,8 @@ cmake_ninja_workdir = D$:/mySrouceCode/DipLevel1/cmake-build-debug/
 
 build cmake_object_order_depends_target_DipLevel1: phony || CMakeFiles/DipLevel1.dir
 
-build CMakeFiles/DipLevel1.dir/11-miniPj.cpp.obj: CXX_COMPILER__DipLevel1_Debug D$:/mySrouceCode/DipLevel1/11-miniPj.cpp || cmake_object_order_depends_target_DipLevel1
-  DEP_FILE = CMakeFiles\DipLevel1.dir\11-miniPj.cpp.obj.d
+build CMakeFiles/DipLevel1.dir/19-ForAss3.cpp.obj: CXX_COMPILER__DipLevel1_Debug D$:/mySrouceCode/DipLevel1/19-ForAss3.cpp || cmake_object_order_depends_target_DipLevel1
+  DEP_FILE = CMakeFiles\DipLevel1.dir\19-ForAss3.cpp.obj.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles\DipLevel1.dir
   OBJECT_FILE_DIR = CMakeFiles\DipLevel1.dir
@@ -63,7 +63,7 @@ build CMakeFiles/DipLevel1.dir/11-miniPj.cpp.obj: CXX_COMPILER__DipLevel1_Debug 
 #############################################
 # Link the executable DipLevel1.exe
 
-build DipLevel1.exe: CXX_EXECUTABLE_LINKER__DipLevel1_Debug CMakeFiles/DipLevel1.dir/11-miniPj.cpp.obj
+build DipLevel1.exe: CXX_EXECUTABLE_LINKER__DipLevel1_Debug CMakeFiles/DipLevel1.dir/19-ForAss3.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\DipLevel1.dir

@@ -24,6 +24,7 @@ int main(){
 
             printf("you can play game!\n");
             while (true){
+                global_flag=0;
 
                 printf("Press 1 to Login!\nPress 2 to Register:\nPress 3 to Complete Quit:\nPress 4 to Back:");
                 scanf("%d",&option);
@@ -77,7 +78,7 @@ int main(){
 
                                 if(userId==userId2){
                                     db[dbIndex]=userId;
-                                    dbIndex;
+                                    dbIndex++;
                                     printf("Registration success:\n");
                                     //registration code
                                     global_flag=1;
@@ -107,7 +108,6 @@ int main(){
         }
 
     }
-
 
     return 0;
 }
