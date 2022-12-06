@@ -12,6 +12,9 @@
 void generateChar();
 void counting();
 void dataPrinting();
+int biggestElement();
+void printingASCII();
+void writingToAFile();
 
 int forCount[26]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
@@ -21,6 +24,12 @@ int main(){
     generateChar();
     counting();
     dataPrinting();
+
+    int index = biggestElement();
+
+    printf("\n\nIndex %d\n",forCount[index]);
+    //printingASCII();
+    writingToAFile();
 
     return 0;
 }
@@ -80,3 +89,89 @@ void dataPrinting(){
     }
 
 }
+
+int biggestElement(){
+
+    int bigElement=0; //50
+
+    for(int i=0; i<26 ; i++){
+
+        if(forCount[i]>bigElement){ // 46 // 50 // 30
+
+            bigElement = forCount[i]; // 50
+        }
+    }
+
+    return bigElement;
+
+}
+
+void printingASCII(){
+
+    int index = biggestElement();
+
+    for(int x=0 ; x<index ; x++){ // outter loop
+
+        for(int y=0 ; y<26 ; y++){
+
+            if(forCount[y]>=0){
+
+                printf("%c  ",y+97);
+                forCount[y]--;
+            } else{
+
+                printf("   ");
+            }
+
+
+        }
+        printf("\n");
+
+    }
+
+}
+
+void writingToAFile(){
+
+    FILE *fptr;
+
+    fptr = fopen("data.txt","w");
+    fclose(fptr);
+
+    FILE *fptr2;
+    fptr2 = fopen("data.txt","a");
+
+    if(fptr2 == NULL){
+        printf("File cannot open:\n");
+
+    } else{
+
+
+
+        int index = biggestElement();
+
+        for(int x=0 ; x<index ; x++){ // outter loop
+
+            for(int y=0 ; y<26 ; y++){
+
+                if(forCount[y]>=0){
+
+                    fprintf(fptr2,"%c  ",y+97);
+                    forCount[y]--;
+                } else{
+
+                    fprintf(fptr2,"%c%c%c",' ',' ',' ');
+                }
+
+
+            }
+            fprintf(fptr2,"%c",'\n');
+
+
+        }
+    }
+    fclose(fptr2);
+
+
+}
+
