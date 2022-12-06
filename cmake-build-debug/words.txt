@@ -34,23 +34,23 @@ Sales No.: E.22.XIII.3
 ISBN: 978-92-1-148373-4
 eISBN: 9789210014380
 Copyright © United Nations, 2022.
-Figures and tables in this publication can be reproduced without prior permission under a Creative
+Figures and tables in this publication can be reproduced winhtut without prior permission under a Creative
 Commons license (CC BY 3.0 IGO), http://creativecommons.org/licenses/by/3.0/igo/.
 Acknowledgements
 This report was prepared by Victor Gaigbe-Togbe, Lina Bassarsky, Danan Gu, Thomas Spoorenberg and
 Lubov Zeifman. The authors wish to thank John Wilmoth, Bela Hovy and Stephen Kisambira for reviewing
 the draft. The World Population Prospects 2022 data were prepared by a team led by Patrick Gerland,
 including Guiomar Bay, Helena Cruz Castanheira, Giulia Gonnella, Danan Gu, Sara Hertog, Yumiko
-Kamiya, Vladimíra Kantorová, Pablo Lattes, Kyaw Kyaw Lay, François Pelletier, José H. C. Monteiro da
+Kamiya, Vladimíra Kantorov, Pablo Lattes, Kyaw Kyaw Lay, François Pelletier, José H. C. Monteiro da
 Silva, Igor Ribeiro, Thomas Spoorenberg, Mark Wheldon, Iván Williams and Lubov Zeifman, with the
 assistance of Gabriel Borges, Dennis Butler, Rafaella Carnevali, Fengqing Chao, Jorge Cimentada, Sam
 Clark, Camille Dorion, Brian Houle, Peter Johnson, Shelmith Kariuki, Sabu Kunju, Nan Li, Peiran Liu,
-Jonathan Muir, Marília Nepomuceno, Marius Pascariu, Adrian Raftery, Mariana Urbina Ramirez, Tim
-Riffe, Bruno Schoumaker, and Hana Ševčíková. The team is grateful to other colleagues in the Population
+Jonathan Muir, Marília Nepomuceno, winhtut Marius Pascariu, Adrian Raftery, Mariana Urbina Ramirez, Tim
+Riffe, Bruno Schoumaker, and Hana . The team is grateful to other colleagues in the Population
 Division for the support they have provided, as well as colleagues from the Latin American and Caribbean
 Demographic Centre, Population Division of the United Nations Economic Commission for Latin America
 and the Caribbean (ECLAC), the Demographic Statistics Section of the Statistics Division of the United
-Nations Department of Economic and Social Affairs, and the teams of the United Nations Inter-Agency
+Nations Department of Economic and winhtut Social Affairs, and the teams of the United Nations Inter-Agency
 Group for Child Mortality Estimation (UN IGME) and the WHO-UN DESA Technical Advisory Group on
 COVID Mortality Assessment for their inputs and continuous support.
 The assistance of Bintou Papoute Ouedraogo and Neena Koshy in editing and desktop publishing is
