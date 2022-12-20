@@ -3,4 +3,4 @@ project(DipLevel1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DipLevel1 22.IntroDS.cpp)
+add_executable(DipLevel1 31-BST.c)
