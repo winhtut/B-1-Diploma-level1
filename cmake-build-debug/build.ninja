@@ -49,11 +49,11 @@ cmake_ninja_workdir = D$:/mySrouceCode/DipLevel1/cmake-build-debug/
 
 build cmake_object_order_depends_target_DipLevel1: phony || CMakeFiles/DipLevel1.dir
 
-build CMakeFiles/DipLevel1.dir/Algorithms/2-jumpSearch.c.obj: C_COMPILER__DipLevel1_Debug D$:/mySrouceCode/DipLevel1/Algorithms/2-jumpSearch.c || cmake_object_order_depends_target_DipLevel1
-  DEP_FILE = CMakeFiles\DipLevel1.dir\Algorithms\2-jumpSearch.c.obj.d
+build CMakeFiles/DipLevel1.dir/1-IntroMiNiPj/1-preStruct.c.obj: C_COMPILER__DipLevel1_Debug D$:/mySrouceCode/DipLevel1/1-IntroMiNiPj/1-preStruct.c || cmake_object_order_depends_target_DipLevel1
+  DEP_FILE = CMakeFiles\DipLevel1.dir\1-IntroMiNiPj\1-preStruct.c.obj.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles\DipLevel1.dir
-  OBJECT_FILE_DIR = CMakeFiles\DipLevel1.dir\Algorithms
+  OBJECT_FILE_DIR = CMakeFiles\DipLevel1.dir\1-IntroMiNiPj
 
 
 # =============================================================================
@@ -63,7 +63,7 @@ build CMakeFiles/DipLevel1.dir/Algorithms/2-jumpSearch.c.obj: C_COMPILER__DipLev
 #############################################
 # Link the executable DipLevel1.exe
 
-build DipLevel1.exe: C_EXECUTABLE_LINKER__DipLevel1_Debug CMakeFiles/DipLevel1.dir/Algorithms/2-jumpSearch.c.obj
+build DipLevel1.exe: C_EXECUTABLE_LINKER__DipLevel1_Debug CMakeFiles/DipLevel1.dir/1-IntroMiNiPj/1-preStruct.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\DipLevel1.dir
