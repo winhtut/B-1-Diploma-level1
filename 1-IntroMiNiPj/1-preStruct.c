@@ -26,11 +26,16 @@ void userActionSector();
 void loadingAllDataFromFile();
 void registration();
 void lobby();
+void myGmailValidation(char toValidate[50]);
+void copyToArray(char transmit[50]);
+void myStrongPassword(char pass[50]);
 
 int eFound = -1;
 int pFound=-1;
+int gValid=-1;
 
 int globalIndex=0;
+int strongPass = -1;
 
 int main(){
 
@@ -97,7 +102,7 @@ void login(){
 
 
     if(eFound != -1 && pFound == 1){
-            userActionSector();
+        userActionSector();
 
 
     } else{
@@ -117,17 +122,17 @@ void myStrCmp(char userInputChar[50]){
 
         if( first == sec){
 
-                for(int gcc=0; gcc<first ; gcc++){
+            for(int gcc=0; gcc<first ; gcc++){
 
-                    if( info[i].email[gcc] != userInputChar[gcc]){
+                if( info[i].email[gcc] != userInputChar[gcc]){
 
-                        break;
-                    } else{
-                        sameCount++;
-
-                    }
+                    break;
+                } else{
+                    sameCount++;
 
                 }
+
+            }
 
         }
         if( sec == sameCount){
@@ -183,7 +188,7 @@ int charCounting(char toCount[50]){ // toCount[50] = {'w','i','n','@'gmail.com,'
 
 void recordingAllDataToFile(){
 
-    FILE *fptr = fopen("dipDB.txt","w");
+    FILE *fptr = fopen("db.txt","w");
 
     if(fptr == NULL){
         printf("Error at recordingAllDataToFile fun():\n");
@@ -227,7 +232,7 @@ void userActionSector(){
 
 void loadingAllDataFromFile(){
 
-    FILE *fptr = fopen("dipDB.txt","r");
+    FILE *fptr = fopen("db.txt","r");
 
     if(fptr == NULL){
         printf("Error at loading!\n");
@@ -251,17 +256,110 @@ void loadingAllDataFromFile(){
 
 void registration(){
 
-
+    char reEmail[50];
     printf("This is registration!\n");
     printf("Enter your email:");
+    scanf(" %[^\n]",&reEmail[0]);
+    gValid = -1;
+    myGmailValidation(reEmail);
+
+    if( gValid != -1){
+
+        eFound=-1;
+        myStrCmp(reEmail);
+
+        if(eFound == -1){
+            //globalIndex++;
+            copyToArray(reEmail);
+            info[globalIndex].id = globalIndex+1;
+            printf("U can register enter your name pls:");
+            scanf(" %[^\n]",&info[globalIndex].name);
+
+            printf("U can register enter your age pls:");
+            scanf("%d",&info[globalIndex].age);
+
+            printf("Enter Your password:");
+            scanf(" %[^\n]",&info[globalIndex].password);
+            globalIndex++;
+            printingAllData();
+            login();
+
+        } else{
+
+            printf(" Your email was already exist!\n");
+            registration();
+        }
 
 
-    eFound=-1;
-    myStrCmp(userEmail);
-
-    if(eFound == -1){
-        printf("U can register enter your name ph pss")
+    } else{
+        printf("Your gmail not valid format:\n");
+        registration();
     }
+}
+
+void myGmailValidation(char toValidate[50]){
+
+    // winhtut@gmail.com
+    int toEndPoint = charCounting(toValidate);
+    char form[10]={'@','g','m','a','i','l','.','c','o','m'};
+    int count=0;
+
+    for(int i=0; i<toEndPoint; i++){
+
+        if(toValidate[i] == '@' || toValidate[i] ==' '){
+            break;
+        }else{
+            count++;
+        }
+
+    }
+    int tocheck=0;
+    for( int i=0 ; i< toEndPoint ; i++){
+
+        if( toValidate[count] != form[i]){
+            break;
+        } else{
+            count++;
+            tocheck++;
+        }
+    }
+
+    if( tocheck == 10){
+        gValid=1;
+    }
+
+
+}
+
+void copyToArray(char transmit[50]){
+
+    int toEnd = charCounting(transmit);
+
+    for(int i=0; i<toEnd ; i++){
+
+        info[globalIndex].email[i]= transmit[i];
+
+    }
+
+
+}
+
+void myStrongPassword(char pass[50]){
+
+
+    int numberOfChar  = charCounting(pass);
+
+    if( numberOfChar <9){
+        strongPass= 1;
+    } else{
+
+
+
+
+
+    }
+
+
 
 }
 
