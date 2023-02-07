@@ -3,4 +3,4 @@ project(DipLevel1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DipLevel1 1-IntroMiNiPj/1-preStruct.c)
+add_executable(DipLevel1 1-DIPBank/bank.c)

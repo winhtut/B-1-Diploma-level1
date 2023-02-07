@@ -29,6 +29,7 @@ void lobby();
 void myGmailValidation(char toValidate[50]);
 void copyToArray(char transmit[50]);
 void myStrongPassword(char pass[50]);
+void myStringCopy(char first[50] , char second[50] );
 
 int eFound = -1;
 int pFound=-1;
@@ -255,7 +256,7 @@ void loadingAllDataFromFile(){
 }
 
 void registration(){
-
+    char rePassword[50];
     char reEmail[50];
     printf("This is registration!\n");
     printf("Enter your email:");
@@ -277,9 +278,20 @@ void registration(){
 
             printf("U can register enter your age pls:");
             scanf("%d",&info[globalIndex].age);
+            int a=0;
+            while (a==0){
+                printf("Enter Your password:");
+                scanf(" %[^\n]",&rePassword);
+                strongPass=-1;
+                myStrongPassword(rePassword);
+                if( strongPass != -1){
+                    myStringCopy(info[globalIndex].password , rePassword);
+                    a = 1;
 
-            printf("Enter Your password:");
-            scanf(" %[^\n]",&info[globalIndex].password);
+                } else{
+                    printf("Weak Password Try Again!\n");
+                }
+            }
             globalIndex++;
             printingAllData();
             login();
@@ -341,24 +353,52 @@ void copyToArray(char transmit[50]){
 
     }
 
+}
+
+void myStringCopy(char first[50] , char second[50] ){
+
+    int secondCount =charCounting(second);
+    for( int i=0; i<50; i++){
+        first[i]='\0';
+    }
+
+    for(int a=0; a<secondCount ; a++){
+
+        first[a] = second[a];
+
+    }
 
 }
 
 void myStrongPassword(char pass[50]){
 
+    int i=0;
+    int special=0;
+    int numberChar=0;
+    int capChar=0;
+    int smallChar=0;
+    while (strongPass == -1){
+        if( pass[i] >= 33 && pass[i] <= 42){
 
-    int numberOfChar  = charCounting(pass);
+            special++;
+        } else  if( pass[i] >= 48 && pass[i] <= 57){
 
-    if( numberOfChar <9){
-        strongPass= 1;
-    } else{
+            numberChar++;
 
+        } else if( pass[i] >= 65 && pass[i] <= 90){
 
+            capChar++;
+        } else if( pass[i] >= 97 && pass[i] <= 122)
 
-
-
+            smallChar++;
+        i++;
     }
 
+    if( special > 0 && numberChar >0 && capChar > 0 && smallChar >0){
+        strongPass = 1;
+    } else{
+        printf("Weak password:\nTryAgain\n");
+            }
 
 
 }
