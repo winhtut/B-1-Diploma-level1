@@ -1,0 +1,4 @@
+1 WinHtut 9/paoola(N)123456 ncc@gmail.com tour personal T 10000 1000 0.3 old 3 94537123 30000 pyinoolwin bank
+2 admin2 9/paoola(N)123456 admin2@gmail.com tour personal T 10000 1000 0.3 old 3 94537123 30000 pyinoolwin bank
+3 admin3 9/paoola(N)123456 admin3@gmail.com tour personal T 10000 1000 0.3 old 3 94537123 30000 pyinoolwin bank
+4 bankuser 9/paoola(N)45678 bankuser@gmail.com tour personal T 10000 1000 0.3 new 3 999 30000 pyinoolwin bank
